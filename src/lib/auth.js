@@ -1,6 +1,6 @@
 // Authentication utilities for Strapi integration
 
-const API_BASE_URL = "http://localhost:1337/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:1337/api";
 
 export const auth = {
   // Get stored token

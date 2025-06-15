@@ -232,7 +232,7 @@ export const usersService = {
     try {
       // Primeiro, buscar os pontos atuais do usuário
       const currentUser = await apiRequest(`/users/${userId}`);
-      const currentPoints = currentUser.pontos_totais || 0;
+      const currentPoints = currentUser.pontos || 0;
       
       // Calcular nova pontuação
       const newTotalPoints = currentPoints + points;

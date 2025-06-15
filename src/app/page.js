@@ -131,7 +131,7 @@ export default function Home() {
               </div>
               <div className="text-xs text-green-600 flex items-center leading-tight">
                 <MapPin className="inline-block mr-1 text-green-500" size={14} />
-                {visitedLocals} locais visitados
+                # locais visitados
               </div>
             </div>
           </div>

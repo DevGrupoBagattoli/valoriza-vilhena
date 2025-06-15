@@ -70,7 +70,7 @@ export default function RankingPage() {
       case 2:
         return 'bg-gradient-to-r from-gray-50 to-gray-100 border-gray-300';
       case 3:
-        return 'bg-gradient-to-r from-amber-50 to-amber-100 border-amber-300';
+        return 'bg-gradient-to-r from-amber-100 to-amber-200 border-amber-300';
       default:
         return 'bg-white border-gray-200';
     }

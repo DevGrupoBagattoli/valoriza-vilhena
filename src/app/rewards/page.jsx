@@ -15,8 +15,7 @@ import Loading from '@/components/Loading';
 
 export default function RewardsPage() {
   const router = useRouter();
-  const { isAuthenticated, isLoading, user } = useApp();
-  const points = user?.points;
+  const { isAuthenticated, isLoading, user, points } = useApp();
   const [rewards, setRewards] = useState([]);
   const [loadingRewards, setLoadingRewards] = useState(true);
   const [redeeming, setRedeeming] = useState(null);
@@ -120,7 +119,7 @@ export default function RewardsPage() {
               </div>
               <div>
                 <div className="text-sm text-yellow-700 font-medium">Seus pontos</div>
-                <div className="text-2xl font-bold text-yellow-900">{points || 0}</div>
+                <div className="text-2xl font-bold text-yellow-900">{user.pontos || points || 0}</div>
               </div>
             </div>
           </div>

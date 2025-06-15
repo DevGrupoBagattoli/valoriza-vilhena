@@ -15,7 +15,8 @@ import Loading from '@/components/Loading';
 
 export default function RewardsPage() {
   const router = useRouter();
-  const { isAuthenticated, isLoading, user, points } = useApp();
+  const { isAuthenticated, isLoading, user } = useApp();
+  const points = user?.points;
   const [rewards, setRewards] = useState([]);
   const [loadingRewards, setLoadingRewards] = useState(true);
   const [redeeming, setRedeeming] = useState(null);

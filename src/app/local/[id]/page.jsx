@@ -216,7 +216,7 @@ export default function LocalDetailPage() {
               ) : (
                 <div className="flex items-center justify-center space-x-2">
                   <Camera size={20} />
-                  <span>Fazer Check-in Pelo Scanner</span>
+                  <span>Faça Check-in pelo scanner</span>
                 </div>
               )}
             </Button>
@@ -318,7 +318,7 @@ export default function LocalDetailPage() {
         </div>
 
         {/* QR Code Info */}
-        {local.qr_code_id && (
+        {/* {local.qr_code_id && (
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
             <h3 className="font-medium text-blue-900 mb-2">
               📱 QR Code: {local.qr_code_id}
@@ -327,7 +327,7 @@ export default function LocalDetailPage() {
               Escaneie este código QR no local para fazer check-in e ganhar pontos.
             </p>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
